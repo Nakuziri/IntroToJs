@@ -4,3 +4,17 @@ body {
     max-width: 700px;
     margin: auto;
 }
+
+.buttonFix {
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+}
+h1{
+font-size: xx-large;
+}
+
+h2 {
+    font-size: xxx-large;
+    background-color: antiquewhite;
+}
