@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
 body {
     background-color: burlywood;
     text-align: center;
@@ -10,6 +12,13 @@ body {
     padding: 10px;
     font-size: large;
 }
+#LapButton {
+    margin: 10px;
+    padding:  13px 20px;
+    font-size: large;
+
+}
+
 h1{
 font-size: xx-large;
 }
@@ -17,4 +26,12 @@ font-size: xx-large;
 h2 {
     font-size: xxx-large;
     background-color: antiquewhite;
+}
+
+buton:hover {
+background-color: rgba(174, 151, 88, 0.846);
+}
+
+button:active {
+    background-color: wheat;
 }

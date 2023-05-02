@@ -2,10 +2,15 @@ let milliseconds = 0
 let seconds = 0
 let minutes = 0
 
+let digits = document.getElementById('digits')
+
+let StartButton = document.getElementById('Start-btn')
+
 let interval;
 
 function Start () {
-    Reset()
+    
+    StartButton.disabled = true 
 
     interval = setInterval(function (){
         milliseconds = milliseconds + 10
@@ -22,12 +27,15 @@ function Start () {
             seconds = 0
         }        
         
-        digits.innerHTML = minutes + ':' + String(seconds).padStart(2, '0') + ':' +milliseconds
+        digits.innerHTML = String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0') + ':' + String(milliseconds).padStart(2, '0')
     }, 10)
 }
 
 function Stop () {
     clearInterval(interval)
+    
+    StartButton.disabled = false
+
 }
 
 function Reset () {
@@ -37,4 +45,10 @@ milliseconds = 0
 seconds = 0
 minutes = 0
 
+}
+
+function Lap () {
+    const node = document.createElement("Li")
+    node.innerHTML = String(minutes).padStart(2, "0") + ";" + String(seconds) 
+    document.getElementById("laps"),appendChild(node);
 }
